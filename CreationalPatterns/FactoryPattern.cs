@@ -5,8 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Biao.DesignPatterns.CreationalPatterns {
-    internal class FactoryPattern {
-    }
+    //internal class FactoryPattern {
+    //}
 
     /// <summary>
     /// 定义一个图形接口

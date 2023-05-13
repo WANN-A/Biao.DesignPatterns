@@ -1,4 +1,5 @@
 ﻿using Biao.DesignPatterns.CreationalPatterns;
+using Biao.DesignPatterns.StructuralPatterns;
 
 namespace Biao.DesignPatterns
 {
@@ -6,6 +7,8 @@ namespace Biao.DesignPatterns
     {
         static void Main(string[] args)
         {
+            // 测试创建型设计模式
+            /*
             //测试单例模式
             Console.WriteLine("---------------测试单例模式---------------");
             Biao.DesignPatterns.CreationalPatterns.SingletonPattern singletonPattern =
@@ -60,7 +63,14 @@ namespace Biao.DesignPatterns
             Console.WriteLine("Shape:" + cloneShape2.GetType());
 
             ShapeforPrototypePattern cloneShape3 = (ShapeforPrototypePattern)ShapeCache.GetShape(3);
-            Console.WriteLine("Shape:" + cloneShape3.GetType());
+            Console.WriteLine("Shape:" + cloneShape3.GetType());*/
+
+            // 测试结构型设计模式
+            AudioPlayer audioPlayer = new AudioPlayer();
+            audioPlayer.Play("mp3", "只因你太美.mp3");
+            audioPlayer.Play("mp4", "铁山靠.mp4");
+            audioPlayer.Play("vlc", "泥食不食油饼.vlc");
+            audioPlayer.Play("avi", "荔枝.avi");
         }
     }
 }

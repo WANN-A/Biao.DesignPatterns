@@ -17,10 +17,6 @@ using System.Threading.Tasks;
 
 namespace Biao.DesignPatterns.CreationalPatterns
 {
-    internal class PrototypePattern
-    {
-    }
-
     /// <summary>
     /// 创建一个实现了调用Object对象的MemberwiseClone方法的Clone方法的抽象类。
     /// </summary>

@@ -16,10 +16,6 @@ using System.Threading.Tasks;
 
 namespace Biao.DesignPatterns.CreationalPatterns
 {
-    internal class BuilderPattern
-    {
-    }
-
     /// <summary>
     /// 创建一个表示食物条目的接口
     /// </summary>

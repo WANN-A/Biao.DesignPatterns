@@ -66,11 +66,22 @@ namespace Biao.DesignPatterns
             Console.WriteLine("Shape:" + cloneShape3.GetType());*/
 
             // 测试结构型设计模式
+            //测试适配器模式
+            Console.WriteLine("---------------测试适配器模式---------------");
             AudioPlayer audioPlayer = new AudioPlayer();
             audioPlayer.Play("mp3", "只因你太美.mp3");
             audioPlayer.Play("mp4", "铁山靠.mp4");
             audioPlayer.Play("vlc", "泥食不食油饼.vlc");
             audioPlayer.Play("avi", "荔枝.avi");
+
+            //测试桥接桥接模式
+            Console.WriteLine("---------------测试桥接模式---------------");
+            StructuralPatterns.Shape redShape = new StructuralPatterns.Circle(100, 100, 10, new RedCircle());
+            StructuralPatterns.Shape greenShape = new StructuralPatterns.Circle(100, 100, 10, new GreenCircle());
+
+            redShape.Draw();
+            greenShape.Draw();
+
         }
     }
 }

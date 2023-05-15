@@ -78,10 +78,24 @@ namespace Biao.DesignPatterns
             Console.WriteLine("---------------测试桥接模式---------------");
             StructuralPatterns.Shape redShape = new StructuralPatterns.Circle(100, 100, 10, new RedCircle());
             StructuralPatterns.Shape greenShape = new StructuralPatterns.Circle(100, 100, 10, new GreenCircle());
-
             redShape.Draw();
             greenShape.Draw();
 
+            //测试桥接桥接模式
+            Console.WriteLine("---------------测试装饰器模式---------------");
+            ShapeforDecoratorPattern rentangle = new Biao.DesignPatterns.StructuralPatterns.Rentangle();
+            ShapeDecorator redRentangle = new RedShapeDecorator(new Biao.DesignPatterns.StructuralPatterns.Rentangle());
+            ShapeDecorator redSquare = new RedShapeDecorator(new Biao.DesignPatterns.StructuralPatterns.Square());
+            //ShapeforDecoratorPattern redRentangle = new RedShapeDecorator(new Biao.DesignPatterns.StructuralPatterns.Rentangle());
+            //ShapeforDecoratorPattern redSquare = new RedShapeDecorator(new Biao.DesignPatterns.StructuralPatterns.Square());
+            Console.WriteLine("Rentangle with normal border");
+            rentangle.Draw();
+            Console.WriteLine("----");
+            Console.WriteLine("Rentangle of red border");
+            redRentangle.Draw();
+            Console.WriteLine("----");
+            Console.WriteLine("Square of red border");
+            redSquare.Draw();
         }
     }
 }

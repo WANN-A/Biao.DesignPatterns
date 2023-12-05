@@ -7,7 +7,7 @@ namespace Biao.DesignPatterns
     {
         static void Main(string[] args)
         {
-            //测试创建型设计模式
+            ///测试创建型设计模式
             // 测试单例模式
             TestSingletonPattern();
             // 测试工厂模式
@@ -19,7 +19,7 @@ namespace Biao.DesignPatterns
             // 测试原型模式
             TestPrototypePattern();
 
-            //测试结构型设计模式
+            ///测试结构型设计模式
             // 测试适配器模式
             TestAdapterPattern();
             // 测试桥接桥接模式
